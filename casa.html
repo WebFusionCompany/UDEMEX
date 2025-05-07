@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Visualizador de Modelos 3D OXXO</title>
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        
+        <div id="loading">
+            <div id="logo-container">
+                <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+                    <path fill="#E72E2D" d="M60,0C26.863,0,0,8.954,0,20s26.863,20,60,20s60-8.954,60-20S93.137,0,60,0z M80,25H40V15h40V25z"/>
+                    <text x="60" y="23" fill="white" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12">OXXO</text>
+                </svg>
+            </div>
+            <p>Cargando modelo 3D...</p>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="progress-text">0%</p>
+        </div>
+        
+        <div id="controls">
+            <a href="index.html"><button id="wireframe-btn" class="control-btn">IR AL iNICIO</button></a>
+            <button id="wireframe-btn" class="control-btn">Mostrar Wireframe</button>
+            <button id="reset-btn" class="control-btn">Reiniciar Vista</button>
+            <input type="file" id="file-input" accept=".glb,.gltf">
+            <label for="file-input" id="file-label">Cargar Modelo</label>
+        </div>
+        
+        <div id="info">
+            <p>Visualizador de Modelos 3D OXXO</p>
+            <p>Utiliza el mouse para rotar</p>
+            <p>Scroll para zoom</p>
+        </div>
+        
+        <div id="error">
+            <h3>Error al cargar el modelo</h3>
+            <p id="error-message"></p>
+            <button id="error-close" class="control-btn">Cerrar</button>
+        </div>
+        
+        <footer id="collaboration-footer">
+            <div class="footer-content">
+                <div class="logos-container">
+                    <div class="logo-item webfusion">
+                        <span class="logo-text">WebFusion Company</span>
+                    </div>
+                    <div class="collaboration-text">
+                        <span>Colaboración</span>
+                    </div>
+                    <div class="logo-item unam">
+                        <span class="logo-text">UDEMEX Toluca CU</span>
+                    </div>
+                </div>
+                <p class="copyright">© 2025 - UDEMEX - Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+
+    <script src="casa.js"></script>
+</body>
+</html>
+
+

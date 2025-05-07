@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+/* Descripción */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Botones estilo galería */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.button-container a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: #0057a3;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.button-container a:hover {
+    background-color: #003f75;
+}
+
+/* Footer */
+#collaboration-footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.collaboration-text span {
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Derechos reservados */
+footer p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
